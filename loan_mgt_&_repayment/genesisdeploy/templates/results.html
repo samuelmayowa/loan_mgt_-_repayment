@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="">
+</head>
+
+<body>
+    <h2>Welcome to Opone Genesis's Loan Prediction Result Page</h2>
+    <h3>You entered the following data {{lists}}</h3>
+    <h3>From this your loan status is {{val}}</h3>
+
+    {%comment%}
+    {% if {{val}}==0%}
+    <p>Your loan request has passed the first stage, we are processing your request</p> 
+    {% elif {{val}}==1 %}
+    <p> Sorry Our record shows that you will not pay us our money back if you are considered for loan, bye !!!</p>
+    {% else%}
+    <p>Unknown Error Has Occured </p>{% endcomment %}
+    <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <pre>
+            Category Classification:
+            Validate = 0 
+            Not Validate = 1
+        </pre>
+
+    <script src="" async defer></script>
+</body>
+
+</html>

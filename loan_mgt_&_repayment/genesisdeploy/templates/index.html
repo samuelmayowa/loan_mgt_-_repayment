@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <script src="" async defer></script>
+        <div><h3>Welcome to Opone Genesis Loan Prediction Web APP</h3>
+        <h4>Please Fill The Following Form To Know Your Status</h4>
+
+        <form action="{% url 'result'%}">
+        {%csrf_token%}
+        <div class="form-row">
+            <div class="col">
+                <input type="text" name="credit_policy" class="form-control" placeholder="Credit Policy">
+            </div>
+            <div class="col">
+                <input type="text" name="int_rate" class="form-control" placeholder="Interest Rate">
+            </div>
+            <div class="col">
+                <input type="text" name="installment" class="form-control" placeholder="Installment">
+            </div>
+            <div class="col">
+                <input type="text" name="log_annual_inc" class="form-control" placeholder="Natural Log of Annual Income">
+            </div>
+            <div class="col">
+                <input type="text" name="dti" class="form-control" placeholder="Debt to Income Ratio">
+            </div>
+            <div class="col">
+                <input type="text" name="fico" class="form-control" placeholder="FICO">
+            </div>
+            <div class="col">
+                <input type="text" name="days_with_cr" class="form-control" placeholder="Days with Credit Line">
+            </div>
+            <div class="col">
+                <input type="text" name="revol_bal" class="form-control" placeholder="Revolving Balance">
+            </div>
+            <div class="col">
+                <input type="text" name="revol_util" class="form-control" placeholder="Revolving Line Utilization(revol.util)">
+            </div>
+            <div class="col">
+                <input type="text" name="inq_last_6mth" class="form-control" placeholder="Number of Inquiries by Creditors (inq.last6mths)">
+            </div>
+            <div class="col">
+                <input type="text" name="delinq2yrs" class="form-control" placeholder="No. of Times the Payment is due">
+            </div>
+            <div class="col">
+                <input type="text" name="pub_rec" class="form-control" placeholder="No. of Derogatory Public Records">
+            </div>
+            <div class="col">
+                <input type="text" name="purpose_credit_card" class="form-control" placeholder="Credit Card Purpose(purpose_credit_card)">
+            </div>
+            <div class="col">
+                <input type="text" name="purpose_debt_consolidation" class="form-control" placeholder="Debt Consolidation Purpose">
+            </div>
+            <div class="col">
+                <input type="text" name="purpose_educational" class="form-control" placeholder="Educational Purpose(purpose_educational)">
+            </div>
+            <div class="col">
+                <input type="text" name="purpose_home_improvement" class="form-control" placeholder="Home Improvement Purpose(purpose_home_improvement)">
+            </div>
+            <div class="col">
+                <input type="text" name="purpose_major_pur" class="form-control" placeholder="Major Purpose(purpose_major_pur)">
+            </div>
+            <div class="col">
+                <input type="text" name="purpose_small_biz" class="form-control" placeholder="Small Biz Purpose(purpose_small_biz)">
+            </div>
+            <button type="submit" class="btn btn-success">Submit</button>
+        </div>
+    </form>
+        </div>
+    </body>
+</html>
